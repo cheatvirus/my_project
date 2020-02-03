@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+:root {
+    --main-color: #fee6aa;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header {
+    background: black;
+}
+header nav .logo {
+     font-family: 'Roboto Slab', serif;
+     color: var(--main-color);
+     font-size: 1.5rem;
+     text-transform: uppercase;
+     text-align: center;
+     margin-left: 1em;
+}
+header nav .menu {
+    display: flex;
+    flex: 1;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-left: 4em;
+    
+}
+
+header nav .menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1rem;
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header nav .menu a:hover {
+    border: 1px solid var(--main-color);
+}
+
+@media (min-width: 800px) {
+    header nav {
+        display: flex;
+        align-items: center;
+}
+
+header section1 {
+    background-image: url(../img/basic.jpg);
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header section1 p1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+header section1 p2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.button  {
+    display: inline-block;
+    padding: 0.35em 1.5em;
+    border: 0.1em solid #fee6aa;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    color: #fee6aa;
+    text-align: center;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+header section1 form {
+    padding-top: 30px;
+}
+
+main{
+    padding-top: 40px;
+    background: black;
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+}
+
+main section2 img {
+    max-width: 300px;
+}
+
+main section2text {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
